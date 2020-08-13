@@ -7,6 +7,7 @@ const router = new express.Router()
 const { sendWelcomeEmail, sendCancelationEmail } = require('../emails/account')
 
 
+
 router.post('/users',async (req, res)=>{
     const user = new User(req.body)
     
@@ -18,6 +19,7 @@ router.post('/users',async (req, res)=>{
   }catch(e){
    res.status(400).send(e)
   }
+  
   })
    
 router.post('/users/login',async(req,res)=>{
