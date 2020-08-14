@@ -31,7 +31,8 @@ window.addEventListener("load", () => {
     const password1=document.getElementById('password1')
 
     const signUpButton = document.querySelector('#signUpButton')
-   
+    const signUpLink = document.getElementById('signUpLink')
+
     signUpButton.addEventListener("click", () => {
         
         postData('/users', { 
@@ -46,11 +47,21 @@ window.addEventListener("load", () => {
         });
     
         
+        
 
     });
 
+ 
+    signUpLink.addEventListener("click", () => {
+      window.location('/signin.html')
+  });
 
 });
+
+
+
+  
+
 
 
 
