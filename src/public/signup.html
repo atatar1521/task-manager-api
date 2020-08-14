@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,8 +13,8 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -23,7 +23,12 @@
   <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
   <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#563d7c">
-  <script type='text/javascript' src='main.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <!-- Third party plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <script type='text/javascript' src='js/main.js'></script>
 
 
   <style>
@@ -47,13 +52,16 @@
 </head>
 
 <body class="text-center">
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-4">
   <form action="/" class="form-signin" method="post">
-    <h1 class="h3 mb-3 font-weight-normal">Peretz Task-Manager</h1><br>
-    <input type="text"value="1"  name="fName"class="form-control top" id="name" placeholder="First & Last Name" required autofocus>
-    <input type="number"value="1"  name="age" class="form-control bottom" placeholder="age" >
-    <input type="email" value="me@gmail.com" name="mail" class="form-control bottom" id="email" placeholder="Email" required>
-    <input type="password" id="password" value="1" name="password" class="form-control bottom" placeholder="password" required>
-    <input type="password" value="1" name="confirm_password" class="form-control bottom" placeholder="confirm password" required>
+    <h1 class="h3 mb-3 font-weight-normal">Task-Manager<br>Sign Up<br></h1>
+    <input type="text"  name="fName"class="form-control top" id="name" placeholder="First & Last Name" required autofocus>
+    <input type="number" name="age" id="age" class="form-control bottom" placeholder="Age" >
+    <input type="email"  name="mail" class="form-control bottom" id="email" placeholder="me@gmail.com" required>
+    <input type="password" id="password"  name="password" class="form-control bottom" placeholder="password" required>
+    <input type="password"  id ="password1" name="confirm_password" class="form-control bottom" placeholder="confirm password" required>
     <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Remember me
@@ -61,6 +69,9 @@
     </div>
     <button class="btn btn-lg btn-primary btn-block" type="button" id="signUpButton" >Sign up</button>
     <p class="mt-5 mb-3 text-muted">&copy; Evyatar Peretz </p>
+    </div>
+    </div>
+  </div>
   </form>
   
 </body>

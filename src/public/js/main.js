@@ -27,26 +27,30 @@ window.addEventListener("load", () => {
     const userName=document.getElementById('name')
     const email=document.getElementById('email')
     const password=document.getElementById('password')
+    const age=document.getElementById('age')
+    const password1=document.getElementById('password1')
 
     const signUpButton = document.querySelector('#signUpButton')
-
+   
     signUpButton.addEventListener("click", () => {
         
         postData('/users', { 
             name: userName.value,
             email: email.value,
-           password:password.value
+            password1:password1.value ,
+            password:password.value!==password1.value ?  'password' : password.value,
+            age: age.value,
          })
         .then(data => {
           console.log(data); // JSON data parsed by `data.json()` call
         });
     
+        
 
     });
 
 
 });
-
 
 
 

@@ -14,10 +14,11 @@ app.use(taskRouter)
 app.use(express.static(path.join(__dirname, 'public'))); //  "public" off of current is root
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/signup.html'));
+    res.sendFile(path.join(__dirname + '/public/signup.html'));
 });
-app.get('/main.js',function(req,res){
-    res.sendFile(path.join(__dirname + '/main.js')); 
+app.get('js/main.js',function(req,res){
+    res.sendFile(path.join(__dirname + 'js/main.js'));
+    console.log((__dirname + 'js/main.js')) 
 });
 
 
