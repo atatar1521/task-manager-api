@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
     const signInButton = document.querySelector('#signInButton')
 
     
- 
+  
   signInButton.addEventListener("click", () => {
         
     postData('/users/login', { 
@@ -40,10 +40,14 @@ window.addEventListener("load", () => {
       console.log(data); // JSON data parsed by `data.json()` call
     });
 
-    
-    
-
-});
    
+    
 
 });
+
+
+})
+  function loadHomePage() {
+    window.location.href = "/tasks";
+  }
+

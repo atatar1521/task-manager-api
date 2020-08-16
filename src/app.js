@@ -19,17 +19,21 @@ app.get('/', function(req, res) {
 app.get('/signin', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/signin.html'));
 });
+app.get('/Mytasks', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/tasks.html'));
+});
+app.get('/Mytasks', function(req, res) {
+    res.sendFile(path.join(__dirname + '/js/tasks.js'));
+});
 
 app.get('/signup', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/signup.html'));
 });
 app.get('js/main.js',function(req,res){
     res.sendFile(path.join(__dirname + 'js/main.js'));
-    console.log((__dirname + 'js/main.js')) 
 });
 app.get('js/homepage.js',function(req,res){
     res.sendFile(path.join(__dirname + 'js/homepage.js'));
-    console.log((__dirname + 'js/homepage.js')) 
 });
 
 
