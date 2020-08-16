@@ -52,10 +52,7 @@ window.addEventListener("load", () => {
     });
 
  
-    signUpLink.addEventListener("click", () => {
-      window.location('/signin.html')
-  });
-
+    
 });
 
 
